@@ -26,12 +26,12 @@ void decrescente(int nI, int nF)
 
 void impares(int nI, int nF)
 {
-    if(nI <= nF)
+    if (nI <= nF)
     {
-        if(nI % 2 != 0)
-
+        if (nI % 2 != 0)
+        {
             Console.WriteLine(nI);
-            nI = nI+ 1;
+        }
         impares(nI + 1, nF);
     }
 }
@@ -66,7 +66,7 @@ while (op != "3")
             }
             else if (op2 == "2")
             {
-                decrescente(nI, nF);
+                decrescente(nF, nI);
             }
             else if (op2 == "3")
             {
@@ -74,7 +74,7 @@ while (op != "3")
             }
             else if (op2 == "4")
             {
-                // Implementar somatório
+                Console.WriteLine("Somatório: " + somatorio(nI, nF));
             }
     }
     else if (op == "2")
