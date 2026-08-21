@@ -1,4 +1,12 @@
-﻿void crescente(int nI, int nF)
+int somatorio(int nI, int nF)
+{
+    if(nI < nF)
+        return somatorio(nI+1, nF) + nI;
+    else
+        return nI;
+}
+
+void crescente(int nI, int nF)
 {
     if(nI <= nF)
     {
